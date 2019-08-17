@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="smssutosend.yassinedeveloper.com.smsautosend.Setting">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/buttonshape"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message to missing calls"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/text_message"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_weight="3.19"
+            android:inputType="text|textMultiLine"
+            android:maxLines="10"
+            android:textSize="23dp" />
+
+        <EditText
+            android:id="@+id/numberphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="put phone number here"
+            android:inputType="number"
+            android:visibility="gone" />
+
+        <!-- start from -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start From Date time :"
+            android:textSize="26sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/in_date"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:enabled="false" />
+
+            <Button
+                android:id="@+id/btn_date"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/in_date"
+                android:layout_toEndOf="@+id/in_date"
+                android:layout_toRightOf="@+id/in_date"
+                android:text="SELECT DATE" />
+
+            <EditText
+                android:id="@+id/in_time"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/in_date"
+                android:enabled="false" />
+
+            <Button
+                android:id="@+id/btn_time"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/btn_date"
+                android:layout_alignStart="@+id/btn_date"
+                android:layout_below="@+id/btn_date"
+                android:text="SELECT TIME" />
+
+        </RelativeLayout>
+        <!-- end -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End at Date and time :"
+            android:textSize="26sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/in_date2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:enabled="false" />
+
+            <Button
+                android:id="@+id/btn_date2"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/in_date2"
+                android:layout_toEndOf="@+id/in_date2"
+                android:layout_toRightOf="@+id/in_date2"
+                android:text="SELECT DATE" />
+
+            <EditText
+                android:id="@+id/in_time2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/in_date2"
+                android:enabled="false" />
+
+            <Button
+                android:id="@+id/btn_time2"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/btn_date2"
+                android:layout_alignStart="@+id/btn_date2"
+                android:layout_below="@+id/btn_date2"
+                android:text="SELECT TIME" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Type for sending sms ( by detault SIM ACCOUNT)"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/typesendsms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Using SMS API "
+            android:textSize="19dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/done"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/buttonshape"
+                android:text="Done"
+                android:textColor="@android:color/background_dark" />
+
+            <Button
+                android:id="@+id/exit"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonshape"
+                android:text="Reset"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

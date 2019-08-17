@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/buttonshape"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="smssutosend.yassinedeveloper.com.smsautosend.SMSsender">
+
+    <EditText
+        android:id="@+id/smstext"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="SMS text "
+        android:inputType="textMultiLine" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/smsto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="To number phone"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/sendsms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="@android:color/background_light"
+            android:shadowDx="2"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:text="Send"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send sms ( Account SIM use by default)"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/typesend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMS API"
+        android:textSize="18sp" />
+
+    <WebView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
